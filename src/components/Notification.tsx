@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-  XCircleIcon,
-} from '@heroicons/react/outline'
-import { XIcon } from '@heroicons/react/solid'
+// import {
+//   CheckCircleIcon,
+//   InformationCircleIcon,
+//   XCircleIcon,
+// } from '@heroicons/react/outline'
+// import { XIcon } from '@heroicons/react/solid'
 import useNotificationStore from '../stores/useNotificationStore'
 import { useConnection } from '@solana/wallet-adapter-react';
 import { getExplorerUrl } from '../util/explorer'
@@ -44,7 +44,7 @@ const NotificationList = () => {
   );
 }
 
-const Notification = ({ type, message, description, txid, onHide }) => {
+const Notification = ({ type, message, description, txid, onHide } : {type:any, message:any, description:any, txid:any, onHide:any}) => {
   const { connection } = useConnection();
 
   // TODO: we dont have access to the network or endpoint here.. 
@@ -68,7 +68,7 @@ const Notification = ({ type, message, description, txid, onHide }) => {
     >
       <div className={`p-4`}>
         <div className={`flex items-center text-center`}>
-          <div className={`flex-shrink-0`}>
+          {/* <div className={`flex-shrink-0`}>
             {type === 'success' ? (
               <CheckCircleIcon className={`h-8 w-8 mr-1 text-green-700`} />
             ) : null}
@@ -76,7 +76,7 @@ const Notification = ({ type, message, description, txid, onHide }) => {
             {type === 'error' && (
               <XCircleIcon className={`h-8 w-8 mr-1 text-red-700`} />
             )}
-          </div>
+          </div> */}
           <div className={`ml-2 w-0 flex-1`}>
             <div className={`font-bold text-fgd-1`}>{message}</div>
             {description ? (
@@ -105,7 +105,7 @@ const Notification = ({ type, message, description, txid, onHide }) => {
               className={`bg-bkg-2 default-transition rounded-md inline-flex text-fgd-3 hover:text-fgd-4 focus:outline-none`}
             >
               <span className={`sr-only`}>Close</span>
-              <XIcon className="h-5 w-5" />
+              {/* <XIcon className="h-5 w-5" /> */}
             </button>
           </div>
         </div>
