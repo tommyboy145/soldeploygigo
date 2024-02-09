@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import Bottom from "./Bottom";
 import Footer from "./Footer";
