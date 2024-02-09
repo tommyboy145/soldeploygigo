@@ -5,22 +5,22 @@ import { useEffect, useState } from 'react'
 //   XCircleIcon,
 // } from '@heroicons/react/outline'
 // import { XIcon } from '@heroicons/react/solid'
-import useNotificationStore from '../stores/useNotificationStore'
+// import useNotificationStore from '../stores/useNotificationStore'
 import { useConnection } from '@solana/wallet-adapter-react';
 import { getExplorerUrl } from '../util/explorer'
 
 const NotificationList = () => {
-  const { notifications, set: setNotificationStore } = useNotificationStore(
-    (s) => s
-  )
+  // const { notifications, set: setNotificationStore } = useNotificationStore(
+  //   (s) => s
+  // )
 
-  const reversedNotifications = [...notifications].reverse()
+  // const reversedNotifications = [...notifications].reverse()
 
   return (
     <div
       className={`z-20 fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6`}
     >
-      <div className={`flex flex-col w-full`}>
+      {/* <div className={`flex flex-col w-full`}>
         {reversedNotifications.map((n, idx) => (
           <Notification
             key={`${n.message}${idx}`}
@@ -39,7 +39,7 @@ const NotificationList = () => {
             }}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
