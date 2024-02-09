@@ -23,8 +23,7 @@ import {
 import {
   createCreateMetadataAccountV3Instruction,
   PROGRAM_ID,
-} from "@metaplex-foundation/mpl-token-metadata";
-import useUserSOLBalanceStore from "../../stores/useUserSOLBalanceStore";
+} from "@metaplex-foundation/mpl-token-metadata"
 
 const initialValues = {
   tokenName: "",
