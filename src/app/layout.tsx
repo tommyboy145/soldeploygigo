@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import "react-perfect-scrollbar/dist/css/styles.css";
+// import "swiper/swiper.min.css";
+// import "swiper/swiper.scss";
+// import "swiper/swiper-bundle.css";
+// import "swiper/css";
+// import "swiper/css/navigation";
+import "../css/style.css";
+import { ContextProvider } from "@/contexts/ContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ContextProvider>
+        <body className={inter.className}>
+          {children}
+        </body>
+      </ContextProvider>
     </html>
   );
 }
