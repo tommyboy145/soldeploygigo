@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
     "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
     "@metaplex-foundation/umi": "^0.9.1",
     "@solana/spl-token": "^0.4.0",
