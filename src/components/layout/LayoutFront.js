@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Bottom from "./Bottom";
@@ -6,8 +6,7 @@ import Footer from "./Footer";
 import HeaderLanding from "./HeaderLanding";
 import PageHead from "./PageHead";
 import PageTitleLanding from "./PageTitleLanding";
-import { ContextProvider } from "@/contexts/ContextProvider";
-import Notifications from '../../components/Notification'
+import Notifications from "../../components/Notification";
 
 const LayoutFront = ({
   headTitle,
@@ -26,27 +25,24 @@ const LayoutFront = ({
     <>
       <PageHead headTitle={headTitle} />
 
-      {/* Context Provider for solana adapter */}
-      {/* <ContextProvider> */}
-        <div id="main-wrapper" className={pageClass}>
-          <Notifications />
-          <HeaderLanding />
+      <div id="main-wrapper" className={pageClass}>
+        <Notifications />
+        <HeaderLanding />
 
-          {pageTitle && (
-            <PageTitleLanding
-              pageTitle={pageTitle}
-              pageTitleSub={pageTitleSub}
-              parent={parent}
-              child={child}
-            />
-          )}
+        {pageTitle && (
+          <PageTitleLanding
+            pageTitle={pageTitle}
+            pageTitleSub={pageTitleSub}
+            parent={parent}
+            child={child}
+          />
+        )}
 
-          {children}
+        {children}
 
-          <Bottom />
-          <Footer />
-        </div>
-      {/* </ContextProvider> */}
+        <Bottom />
+        <Footer />
+      </div>
     </>
   );
 };

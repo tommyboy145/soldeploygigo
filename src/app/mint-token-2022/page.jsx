@@ -1,9 +1,7 @@
-"use client"
-
 import LayoutFront from "../../components/layout/LayoutFront";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
-import { useCallback, useState, useEffect } from "react";
+import { FC, useCallback, useState, useEffect } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import {
   Keypair,
