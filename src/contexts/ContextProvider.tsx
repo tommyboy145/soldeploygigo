@@ -13,7 +13,7 @@ import { FC, ReactNode, useCallback, useMemo } from 'react';
 import { AutoConnectProvider, useAutoConnect } from './AutoConnectProvider';
 import { notify } from "../util/notifications";
 
-const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
+export const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { autoConnect } = useAutoConnect();
 
     var network = WalletAdapterNetwork.Devnet;
