@@ -1,3 +1,5 @@
+"use client"
+
 import LayoutFront from "../../components/layout/LayoutFront";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
