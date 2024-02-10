@@ -1,3 +1,5 @@
+"use client"
+
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useState, FC, useMemo } from "react";
@@ -144,7 +146,7 @@ function HeaderLanding() {
                   </div>
 
                   <div className="signin-btn d-flex align-items-center">
-                    <WalletMultiButton className="" />
+                    <WalletMultiButton className="btn btn-ghost mr-4" />
                     {/* <Link legacyBehavior href="/signin">
                       <a className="btn btn-primary">Sign In</a>
                     </Link> */}

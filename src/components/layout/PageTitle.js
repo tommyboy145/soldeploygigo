@@ -1,3 +1,6 @@
+
+"use client"
+
 function PageTitle({ pageTitle, pageTitleSub, parent, child }) {
     return (
         <>

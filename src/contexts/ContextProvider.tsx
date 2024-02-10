@@ -39,9 +39,9 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
     const wallets = useMemo(
         () => [
-             new PhantomWalletAdapter(),
-            // new SolflareWalletAdapter(),
-            // new TorusWalletAdapter(),
+            //  new PhantomWalletAdapter(),
+             new SolflareWalletAdapter(),
+             new TorusWalletAdapter(),
         ],
         [network]
     );

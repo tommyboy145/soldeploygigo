@@ -1,4 +1,6 @@
 // import useNotificationStore from "../stores/useNotificationStore";
+"use client"
+
 
 export function notify(newNotification: {
   type?: string

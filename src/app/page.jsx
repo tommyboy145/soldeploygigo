@@ -3,10 +3,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import TeamMember from "../components/elements/TeamMember";
 import LayoutFront from "../components/layout/LayoutFront";
-import CompleteList from '../components/elements/CompleteList';
-import ExploreList from '../components/elements/ExploreList';
+// import TeamMember from "../components/elements/TeamMember";
+// import CompleteList from '../components/elements/CompleteList';
+// import ExploreList from '../components/elements/ExploreList';
 import React, { FC, useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -23,8 +23,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 export default function Home() {
   return (
     <main className={styles.main}>
-      
-      <LayoutFront pageClass={"front"} headTitle={undefined} pageTitle={undefined} pageTitleSub={undefined} parent={undefined} child={undefined}>
+        <LayoutFront pageClass={"front"} headTitle={undefined} pageTitle={undefined} pageTitleSub={undefined} parent={undefined} child={undefined}>
 				<div className="intro1 section-padding">
 					<div className="container">
 						<div className="row align-items-center justify-content-between">
@@ -104,7 +103,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="row">
-							<ExploreList/>
+							{/* <ExploreList/> */}
 						</div>
 					</div>
 				</div>
@@ -118,7 +117,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="row">
-							<CompleteList/>
+							{/* <CompleteList/> */}
 						</div>
 					</div>
 				</div>
@@ -330,7 +329,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="row">
-							<TeamMember/>
+							{/* <TeamMember/> */}
 						</div>
 					</div>
 				</div>
@@ -457,6 +456,7 @@ export default function Home() {
 					</div>
 				</div>
 			</LayoutFront>
+    
       
     </main>
   );
